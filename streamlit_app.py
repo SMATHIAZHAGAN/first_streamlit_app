@@ -2,7 +2,7 @@ import streamlit
 import pandas
 import requests
 
-streamlit.title('My parents\' New Healthy Diner')
+streamlit.title('My Moms\' New Healthy Diner')
 
 streamlit.header('Breakfast Menu')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
