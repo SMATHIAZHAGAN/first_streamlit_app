@@ -47,6 +47,7 @@ streamlit.header('Frutiyvice Fruit Advice!')
 # output it in the screen dataas table
 # streamlit.dataframe(fruityvice_normalized)
 
+
 # Add a textbox for user to input fruit
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 streamlit.write('The user entered ', fruit_choice)
