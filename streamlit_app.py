@@ -60,7 +60,7 @@ streamlit.dataframe(fruityvice_normalized)
 
 import snowflake.connector
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-streamlit.header('Connected to Snowflake Database')
+streamlit.header('Connected to PC_RIVERY_DB Database')
 
 my_cur = my_cnx.cursor()
 my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
