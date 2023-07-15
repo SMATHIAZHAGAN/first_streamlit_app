@@ -79,4 +79,5 @@ add_my_fruit = streamlit.text_input('What fruit would you like to add?')
 # my_cur.execute("delete from fruit_load_list where fruit_name='" +  "water fruit" + "'")
 my_cur.execute("insert into fruit_load_list values ('" +  add_my_fruit + "')")
 streamlit.write('Thanks for adding ', add_my_fruit)
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
