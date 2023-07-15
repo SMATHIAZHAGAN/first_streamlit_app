@@ -1,6 +1,8 @@
 import streamlit
-import pandas
+#import pandas
 import requests
+import snowflake.connector
+from urllib.error import URLError
 
 streamlit.title('My Moms\' New Healthy Diner')
 
@@ -58,7 +60,9 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # output it in the screen dataas table
 streamlit.dataframe(fruityvice_normalized)
 
-import snowflake.connector
+# dont run anything past here while we troubleshoot
+streamkit.stop()
+
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 streamlit.header('Connected to PC_RIVERY_DB Database')
 
